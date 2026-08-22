@@ -1,0 +1,48 @@
+name: Bug
+description: Report something that is not working as expected.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is not working?
+      placeholder: Describe the problem clearly and concisely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: How can the issue be reproduced?
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Observe...
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots, logs, references, or other useful information.
+    validations:
+      required: false
