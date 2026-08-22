@@ -1,0 +1,40 @@
+name: Feature
+description: Propose a new feature or meaningful improvement.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should be added or improved?
+      placeholder: Describe the feature clearly and concisely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What problem does this solve or what value does it create?
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: What should the completed feature do?
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+        - Requirement 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots, references, constraints, or other useful information.
+    validations:
+      required: false
