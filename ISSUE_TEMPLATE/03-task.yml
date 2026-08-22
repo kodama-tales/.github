@@ -1,0 +1,40 @@
+name: Task
+description: Track a defined piece of work that is not a bug or feature.
+title: "[Task] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What needs to be done?
+      placeholder: Describe the task clearly and concisely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: What should be true when this task is complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Work required
+      description: List the main steps or actions if known.
+      placeholder: |
+        - Step 1
+        - Step 2
+        - Step 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add references, constraints, dependencies, or other useful information.
+    validations:
+      required: false
